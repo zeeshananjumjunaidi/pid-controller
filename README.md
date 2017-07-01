@@ -2,13 +2,16 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
-## P Control
-![P Control](data/P-Control.gif?raw=true "P")
-## PD Control
-![P Control](data/PD-Control.gif?raw=true "PD"))
-## PID Control
-![P Control](data/PID-Control.gif?raw=true "PID"))
-
+## General Formula for PID Control
+![PID Formula](https://wikimedia.org/api/rest_v1/media/math/render/svg/242b6798586d4fc1aedf7e4f92bf77416e4fc76c)
+---
+| P Control        | PD Control           | PID Control |
+| ------------- |:-------------:| -----:|
+| ![P Control](https://github.com/zeeshananjumjunaidi/pid-controller/blob/master/data/P-Controller.gif)      | ![P Control](https://github.com/zeeshananjumjunaidi/pid-controller/blob/master/data/PD-Controller.gif) | ![P Control](https://github.com/zeeshananjumjunaidi/pid-controller/blob/master/data/PID-Controller.gif) |
+---
+| P        | D         | I  |
+| ------------- |:-------------:| -----:|
+| P value update itself based on the actual error, more error high value and vise versa   | D term based on the current rate of change of cte     |   I term use past cte, e.g. if the output is weak, then the integral of all error over time will respond with a strong action.  |
 ---
 
 ## Dependencies
